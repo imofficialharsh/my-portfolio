@@ -326,6 +326,47 @@
          </div>
       </section>
 
+      <section id="contact" class="py-20">
+         <canvas id="matrix-canvas"></canvas>
+         <div class="container mx-auto px-6">
+            <h2 class="section-heading" data-scramble-text="contact --send">
+               <span>&gt;</span>
+               <span class="scramble-target">contact --send</span>
+            </h2>
+            <div class="fade-in-section max-w-2xl mx-auto card-ui p-8 rounded-lg">
+               <p class="text-center text-gray-400 mb-8">
+                  Have an idea? Let's turn it into a real-world solution.
+               </p>
+
+               <form id="contact-form" action="#" method="POST">
+                  <div class="mb-6">
+                     <label for="name" class="block mb-2 text-sm font-medium text-gray-300">name:</label>
+                     <input type="text" id="name" name="name"
+                        class="bg-[#0d1117] border border-gray-700 focus:border-green-500 text-white text-sm rounded-md block w-full p-2.5 focus:ring-0"
+                        required>
+                  </div>
+                  <div class="mb-6">
+                     <label for="email" class="block mb-2 text-sm font-medium text-gray-300">email:</label>
+                     <input type="email" id="email" name="email"
+                        class="bg-[#0d1117] border border-gray-700 focus:border-green-500 text-white text-sm rounded-md block w-full p-2.5 focus:ring-0"
+                        required>
+                  </div>
+                  <div class="mb-6">
+                     <label for="message" class="block mb-2 text-sm font-medium text-gray-300">message:</label>
+                     <textarea id="message" name="message" rows="4"
+                        class="bg-[#0d1117] border border-gray-700 focus:border-green-500 text-white text-sm rounded-md block w-full p-2.5 focus:ring-0"
+                        required></textarea>
+                  </div>
+                  <button type="submit"
+                     class="w-full bg-green-600/80 hover:bg-green-500/80 border border-green-500 text-white font-bold py-3 px-6 rounded-md transition duration-300">
+                     execute(send)
+                  </button>
+               </form>
+               <div id="form-feedback" class="mt-4 text-center text-green-400"></div>
+            </div>
+         </div>
+      </section>
+
    </main>
 
 
